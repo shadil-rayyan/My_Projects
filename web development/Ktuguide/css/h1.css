@@ -1,0 +1,466 @@
+/* Reset some default styles */
+body,
+h1,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header styles */
+header {
+    background-color: #6d0c75;
+    color: #fff;
+    position: relative;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    padding-bottom: 0px;
+    padding-top: 0;
+    height: 60px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0;
+}
+
+
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    font-size: 33px;
+    padding-left: 10px;
+    font-family: Georgia, serif;
+    color: #fff;
+}
+
+.logo {
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.mainlogo {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.contributediv {
+    padding-left: 10px;
+}
+
+.social-icons {
+    list-style-type: none;
+    display: flex;
+}
+
+.sicons {
+    height: 16px;
+    width: auto;
+    transition: transform .3s; /* Apply smooth transition on hover */
+    
+}
+ 
+.siconsdiv:hover img{
+    transform: scale(1.25); /* Scale the image on hover */
+
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.contribute-button {
+    background-color: #f39c12;
+    color: #6d0c75;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0PX 0PX 5px black;
+}
+
+.contribute-button:hover {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Menu button styles */
+.menu-button {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    border-radius: 2px;
+}
+
+/* Navigation styles */
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #6d0c75;
+    z-index: 1;
+}
+
+.main-nav.active {
+    display: none;
+    /* Show the navigation when menu button is clicked */
+}
+
+.main-nav ul {
+    background-color: #6d0c75;
+    list-style-type: none;
+    text-align: center;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    height: 30px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 21px;
+}
+
+.main-nav ul li a:hover {
+    color: rgb(214, 190, 161);
+}
+
+.main-nav ul li a ul li a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px;
+    text-align: center;
+}
+
+/* Style the dropdown container */
+hr {
+    padding: 0;
+    margin: 0;
+}
+
+.has-dropdown {
+    position: relative;
+}
+
+.has-dropdown .dropdown {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: #49094b;
+    top: 100%;
+    left: 0;
+    min-width: 40px;
+    padding: 0px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the options (dropdown items) */
+.has-dropdown .dropdown a {
+    display: flex;
+    color: #f39c12;
+    text-decoration: none;
+    padding-left: 28px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    border-bottom: 2px solid #000000;
+    border: 5px black;
+    min-width: 40px;
+}
+
+.has-dropdown .dropdown ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Remove the border-bottom for the last item */
+.has-dropdown .dropdown a:last-child {
+    border-bottom: none;
+}
+
+/* Change the text color when hovering over an option */
+.has-dropdown .dropdown a:hover {
+    color: #af3838;
+}
+
+/* Show the dropdown when hovering over the parent item */
+.has-dropdown:hover .dropdown {
+    display: block;
+}
+
+.web {
+    display: none;
+}
+
+.web {
+    display: none;
+}
+
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+
+    /* Initially hide the navigation bar on smaller screens */
+    .main-nav {
+        display: none;
+    }
+
+    .menu-button {
+        display: flex;
+        /* Show the menu button on smaller screens */
+    }
+
+    .main-nav.active {
+        display: block;
+        /* Show the navigation when menu button is clicked */
+    }
+
+    .main-nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .main-nav ul li {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .social-icons {
+        display: none;
+        /* Hide social icons */
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .web {
+        display: block;
+        color: #f0ecec;
+    }
+
+    .web1 {
+        display: block;
+        color: rgb(143, 137, 129);
+    }
+
+    .has-dropdown .dropdown {
+        background-color: #6d0c75;
+        min-width: 120px;
+        /* Remove the fixed width for dropdowns */
+    }
+
+    .has-dropdown:hover .dropdown {
+        color: #49094b;
+        width: 70px;
+        /* Adjust the width of the dropdown */
+        display: flex;
+        flex-direction: column;
+        /* Display dropdown items in a column */
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        /* Display items in a column */
+        align-items: right;
+        /* Center-align the items */
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+        /* Add some margin between items */
+    }
+
+    /* Display items in multiple rows */
+    .main-nav ul li {
+        display: block;
+        /* Reset the display to block */
+    }
+
+    /* Define the number of items per row and set a width percentage */
+    .main-nav ul li:nth-child(2n+1) {
+        clear: left;
+        /* Start a new row */
+    }
+
+    .has-dropdown {
+        position: relative;
+    }
+
+    .has-dropdown .dropdown {
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: #49094b;
+        top: 100%;
+        padding: 0px;
+        min-width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show the dropdown when hovering over the parent item */
+    .has-dropdown:hover .dropdown {
+        display: block;
+        min-width: 100%;
+    }
+
+    /* Adjust the width of the dropdown and add some spacing */
+    .has-dropdown:hover .dropdown a {
+
+        padding: 10px;
+        margin: 2px;
+        /* Add spacing between dropdown items */
+    }
+
+    /* Add a margin to separate items in the same row */
+    .has-dropdown .dropdown a:nth-child(2n) {
+        margin-right: 5px;
+    }
+
+    .main-nav ul li.has-dropdown ul.dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #49094b;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .main-nav ul li.has-dropdown:hover ul.dropdown {
+        display: block;
+    }
+
+    /* Add spacing between dropdown items */
+    .main-nav ul li.has-dropdown ul.dropdown li a {
+        display: block;
+        padding: 10px;
+        color: #f39c12;
+        text-decoration: none;
+        width: 100%;
+        margin: 0 5px;
+
+    }
+
+    /* Clear float for every 2 items (two items in a row) */
+    .main-nav ul li.has-dropdown ul.dropdown li:nth-child(2n+1) {
+        clear: left;
+    }
+
+    /* Style the dropdown container */
+    .has-dropdown {
+        position: relative;
+        text-align: left;
+    }
+
+    .contribute-button {
+        display: block;
+        height: 27px;
+        width: 72px;
+        align-items: center;
+        padding-right: 20px;
+        font-size: 12px;
+        padding: 0;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 0PX 0PX 5px black;
+    }
+
+    /* Style the dropdown container */
+    .has-dropdown {
+        position: relative;
+    }
+
+    .has-dropdown .dropdown {
+        display: none;
+        position: absolute;
+        text-align: left;
+        top: 100%;
+        left: 0;
+        min-width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: max-height 0.3s ease-in-out;
+        /* Add a smooth transition for max-height */
+        max-height: 0;
+        /* Initially set max-height to 0 */
+        overflow: hidden;
+        /* Hide content that overflows the max-height */
+    }
+
+    /* Show the dropdown when the department is clicked (has .active class) */
+    .has-dropdown.active .dropdown {
+        display: block;
+        max-height: 600px;
+        height: auto;
+        /* Adjust the max-height to your preference */
+    }
+
+    /* Add some spacing between dropdown items */
+    .has-dropdown .dropdown a {
+        display: flex;
+        color: #f39c12;
+        text-decoration: none;
+        padding-left: 28px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        border-bottom: 2px solid #f0ecec;
+        border: 5px rgb(206, 198, 198);
+        min-width: 40px;
+        margin-top: 2px;
+        /* Add spacing between items */
+    }
+
+    .name {
+        font-size: 28px;
+        padding-left: 10px;
+        font-family: Georgia, serif;
+        color: #fff;
+    }
+
+    .logo {
+        width: 28px;
+        height: 28px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+}
