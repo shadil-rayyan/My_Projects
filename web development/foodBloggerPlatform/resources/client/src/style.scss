@@ -1,0 +1,480 @@
+// Define a variable for light green color
+$lightGreen: #b9e7e7;
+
+// Main container for the entire application
+.app {
+  display: flex;
+  justify-content: center;
+
+  // Nested container with a fixed width
+  .container {
+    width: 1024px;
+
+    // Styling for hyperlinks
+    .link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    // Styling for authentication (login and register) section
+    .auth {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: $lightGreen;
+
+      // Header styles for the authentication section
+      h1 {
+        font-size: 20px;
+        color: teal;
+        margin-bottom: 20px;
+      }
+
+      // Form styles for login and register forms
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        background-color: white;
+        width: 200px;
+        gap: 20px;
+
+        // Input field styles
+        input {
+          padding: 10px;
+          border: none;
+          border-bottom: 1px solid gray;
+        }
+
+        // Button styles
+        button {
+          padding: 10px;
+          border: none;
+          background-color: teal;
+          cursor: pointer;
+          color: white;
+        }
+
+        // Error message styles
+        p {
+          font-size: 12px;
+          color: red;
+          text-align: center;
+        }
+
+        // Additional text styles
+        span {
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+    }
+
+    // Navbar styles
+    .navbar {
+      .container {
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        // Logo styles
+        .logo {
+          img {
+            width: 120px;
+          }
+        }
+
+        // Links container
+        .links {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          // Header 6 styles
+          h6 {
+            font-size: 16px;
+            font-weight: 300;
+          }
+
+          // Span styles
+          span {
+            cursor: pointer;
+          }
+
+          // Write button styles
+          .write {
+            background-color: $lightGreen;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 300;
+            border: 1px solid white;
+
+            // Hover styles
+            &:hover {
+              color: teal;
+              background-color: white;
+              border: 1px solid teal;
+            }
+          }
+        }
+      }
+    }
+
+    // Footer styles
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+
+      // Footer content container
+      .footer-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        // Footer section styles
+        .footer-section {
+          flex: 1;
+          padding: 0 20px;
+          text-align: left;
+
+          // Header 3 styles
+          h3 {
+            margin-bottom: 10px;
+          }
+
+          // Unordered list styles
+          ul {
+            list-style-type: none;
+            padding: 0;
+
+            // List item styles
+            li {
+              margin-bottom: 8px;
+
+              // Anchor (link) styles
+              a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 14px;
+                transition: color 0.3s ease;
+
+                // Hover styles
+                &:hover {
+                  color: #67a5f5;
+                }
+              }
+            }
+          }
+        }
+      } // End of .footer-content
+
+    } // End of .footer
+
+    // Home section styles
+    .home {
+      // Posts container
+      .posts {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+
+        // Post styles
+        .post {
+          display: flex;
+          gap: 100px;
+
+          // Alternating styles for odd posts
+          &:nth-child(2n + 1) {
+            flex-direction: row-reverse;
+          }
+
+          // Image container styles
+          .img {
+            flex: 2;
+            position: relative;
+
+            // Pseudo-element for background overlay
+            &::after {
+              content: "";
+              width: 100%;
+              height: 100%;
+              background-color: $lightGreen;
+              position: absolute;
+              top: 20px;
+              left: -20px;
+              z-index: -1;
+            }
+
+            // Image styles
+            img {
+              width: 100%;
+              max-height: 400px;
+              object-fit: cover;
+            }
+          }
+
+          // Content container styles
+          .content {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            // Header 1 styles
+            h1 {
+              font-size: 48px;
+            }
+
+            // Paragraph styles
+            p {
+              font-size: 18px;
+            }
+
+            // Button styles
+            button {
+              width: max-content;
+              padding: 10px 20px;
+              border: none;
+              cursor: pointer;
+              background-color: white;
+              border: 1px solid teal;
+              color: teal;
+
+              // Hover styles
+              &:hover {
+                border: 1px solid white;
+                background-color: $lightGreen;
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Single post styles
+    .single {
+      display: flex;
+      gap: 50px;
+
+      // Content container styles
+      .content {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        // Image styles
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+
+        // User information container styles
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 14px;
+
+          // User image styles
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          // Span styles
+          span {
+            font-weight: bold;
+          }
+        }
+
+        // Edit section styles
+        .edit {
+          display: flex;
+          gap: 5px;
+
+          // Edit and delete button styles
+          img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+          }
+        }
+
+        // Header 1 styles
+        h1 {
+          font-size: 42px;
+          color: #333;
+        }
+
+        // Paragraph styles
+        p {
+          text-align: justify;
+          line-height: 30px;
+        }
+      }
+
+      // Menu container styles
+      .menu {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        // Header 1 styles
+        h1 {
+          font-size: 20px;
+          color: #555;
+        }
+
+        // Post container styles
+        .post {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          // Image styles
+          img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+          }
+
+          // Header 2 styles
+          h2 {
+            color: #555;
+          }
+
+          // Button styles
+          button {
+            width: max-content;
+            padding: 7.5px 15px;
+            border: none;
+            cursor: pointer;
+            color: teal;
+            background-color: white;
+            border: 1px solid teal;
+
+            // Hover styles
+            &:hover {
+              border: 1px solid white;
+              background-color: $lightGreen;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+
+    // Write (add) post styles
+    .add {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+
+      // Content container styles
+      .content {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        // Input field styles
+        input {
+          padding: 10px;
+          border: 1px solid lightgray;
+        }
+
+        // Editor container styles
+        .editorContainer {
+          height: 300px;
+          overflow: scroll;
+          border: 1px solid lightgray;
+
+          // Quill editor styles
+          .editor {
+            height: 100%;
+            border: none;
+          }
+        }
+      }
+
+      // Menu container styles
+      .menu {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        // Item container styles
+        .item {
+          border: 1px solid lightgray;
+          padding: 10px;
+          flex:1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 12px;
+          color: #555;
+
+          // Header 1 styles
+          h1{
+            font-size: 20px;
+          }
+
+          // File upload link styles
+          .file{
+            text-decoration: underline;
+            cursor: pointer;
+          }
+
+          // Buttons container styles
+          .buttons{
+            display: flex;
+            justify-content: space-between;
+
+            // First child button styles
+            :first-child{
+              cursor: pointer;
+              color: teal;
+              background-color: white;
+              border: 1px solid teal;
+              padding: 3px 5px;
+            }
+
+            // Last child button styles
+            :last-child{
+              cursor: pointer;
+              color: white;
+              background-color: teal;
+              border: 1px solid teal;
+              padding: 3px 5px;
+            }
+          }
+
+          // Category container styles
+          .cat{
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            color: teal;
+          }
+        }
+      }
+    }
+  }
+}
