@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Centered Rectangles</title>
+<style>
+  body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  background-color: #f0f0f0; /* Light gray background for visual clarity */
+}
+
+.head{
+  text-align: center;
+  color: white;
+  position: absolute-relative;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* This specifies stacking direction as column */
+  justify-content: center;
+  align-items: center;
+  color: blue;
+}
+.head {
+  text-align: center;
+  color: white;
+  /* Change "position: absolute-relative" to "position: absolute" */
+  position: absolute;
+  top: 0; /* Position the title at the top of the page */
+  left: 0; /* Center the title horizontally */
+  width: 100%; /* Make the title span the full width of the page */
+}
+
+.rectangle {
+  width: 200px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  background-color: blue; /* Light gray rectangle color */
+  border: 1px solid black;
+  margin-bottom: 10px; /* Space between rectangles */
+  display: inline-block; /* Ensure rectangles stay aligned horizontally */
+  text-align: center;
+  line-height: 50px; /* Vertically center text within rectangles */
+  color:white;
+}
+
+</style>
+</head>
+<body>
+  <h1 class="head">S1 Maths NOTE</h1>
+  <div class="container">
+    <div class="rectangle" id="rectangle1">Name 1</div>
+    <div class="rectangle" id="rectangle2">Name 2</div>
+    <div class="rectangle" id="rectangle3">Name 3</div>
+    <div class="rectangle" id="rectangle4">Name 4</div>
+    <div class="rectangle" id="rectangle5">Name 5</div>
+    <div class="rectangle" id="rectangle6">Name 6</div>
+  </div>
+</body>
+</html>
