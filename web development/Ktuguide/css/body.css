@@ -1,0 +1,182 @@
+
+body {
+    margin: 0;
+    
+}
+.mainbody{
+    margin-top: 50px;
+}
+
+/* Style for the colorful columns */
+.colorful-col {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    /* padding: 20px; */
+    margin:20px ;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Define the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+    background-color: #ffffff;
+    
+}
+
+.grid-container-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    /* width: 764px; */
+    /* height: auto; */
+}
+
+/* Define the grid items */
+.grid-item {
+    text-align: center;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    transition: transform 0.2s;
+    width: 200px;
+    height: 175px;
+
+}
+
+/* Apply hover effect */
+.grid-item:hover {
+    transform: scale(1.05);
+    padding: 5px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+/* Define the image style */
+.grid-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* Define the name style */
+.grid-name {
+    text-align: center;
+}
+
+/* Define the link style */
+.grid-link {
+    text-decoration: none;
+    color: #333;
+}
+
+/* CSS for the notification container */
+.notification-container {
+    position: relative;
+    width: 265px; /* Set the width of the rectangular path */
+    height: 214px; /* Set the height of the rectangular path */
+    overflow: hidden; /* Hide the overflow */
+    border: 1px solid #6d0c75; /* Add an outline to the container */
+    box-shadow: 0PX 0PX  3px #6d0c75;
+    border-radius: 4px;
+}
+
+/* CSS for the notification boxes */
+.notification {
+    background-color: #ffffff; /* Green background color */
+    text-align: left; /* Center text horizontally */
+    padding: 10px; /* Padding around the content */
+    position: absolute; /* Absolute positioning to move inside the container */
+    width: 100%; /* Occupy the full width of the container */
+    animation: moveNotification 10s linear infinite; /* 15s duration for the animation */
+    
+   
+    
+}
+.notification a {
+    text-decoration:solid;
+    color: #6d0c75;
+    
+   
+
+}
+.notificationfive {
+    background-color: #6d0c75; /* Green background color */
+    color: rgb(207, 209, 202); /* White text color */
+    font-size: 18px;
+    text-align: center; /* Center text horizontally */
+    padding: 15px; /* Padding around the content */
+    padding-left: 0%;
+    padding-right: 0;
+    position: absolute; /* Absolute positioning to move inside the container */
+    width: 100%; /* Occupy the full width of the container */
+    animation: moveNotification 0s linear infinite; /* 15s duration for the animation */
+    font-weight: bold;
+}
+
+
+.notification:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.notification:nth-child(2) {
+    animation-delay: 1.6s;
+}
+
+.notification:nth-child(3) {
+    animation-delay: 3.2s;
+}
+
+.notification:nth-child(4) {
+    animation-delay: 4.8s;
+}
+
+
+@keyframes moveNotification {
+    0% {
+        top: 100%; /* Start at the bottom edge */
+    }
+    100% {
+        top: -100%; /* Move to the top edge */
+    }
+}
+
+.telegram-bot{
+    position: relative;
+    width: 265px; /* Set the width of the rectangular path */
+    height: 214px; /* Set the height of the rectangular path */
+    overflow: hidden; /* Hide the overflow */
+    border: 1px solid #6d0c75; /* Add an outline to the container */
+    box-shadow: 0PX 0PX  3px #6d0c75;
+    margin-top:30px ;
+    border-radius: 4px;
+    
+}
+
+.telegram {
+    background-color: #6d0c75; /* Green background color */
+   
+    /* color: rgb(219, 189, 189); */
+
+    font-size: 18px;
+    text-align: center; /* Center text horizontally */
+    padding: 15px; /* Padding around the content */
+    padding-left: 0%;
+    padding-right: 0;
+    position: absolute; /* Absolute positioning to move inside the container */
+    width: 100%; /* Occupy the full width of the container */
+    /* animation: moveNotification 0s linear infinite; */
+     /* 15s duration for the animation */
+    font-weight: bold;
+    height: 20px;
+}
+.telegram-bot a{
+    color: rgb(207, 209, 202);
+    text-decoration: none;
+}
+.botimage{
+    
+        width: 85%;
+        height:85%;
+    
+}
