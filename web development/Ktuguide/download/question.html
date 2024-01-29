@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Centered Rectangles</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px; /* Space between sections */
+  }
+
+  .heading {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px; /* Space between heading and rectangles */
+  }
+
+  .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+  }
+
+  .rectangle {
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+  }
+</style>
+</head>
+<body>
+  <div class="section">
+    <h1 class="heading">Question</h1>
+    <div class="container">
+      <div class="rectangle" id="rectangle1"> Question 1</div>
+      <div class="rectangle" id="rectangle2"> Question 2</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h1 class="heading">Solved Question</h1>
+    <div class="container">
+      <div class="rectangle" id="rectangle1">Solved Question 3</div>
+      <div class="rectangle" id="rectangle2">Solved Question 4</div>
+    </div>
+  </div>
+</body>
+</html>
