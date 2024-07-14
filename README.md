@@ -3,8 +3,7 @@
 Welcome to my journey of exploration in the captivating realm of software development! This portfolio serves as a showcase for a variety of projects, ranging from web development to Telegram bots and Android applications. Here, you'll discover a collection of works that reflect my fervor for learning, problem-solving, and pushing the boundaries of technology.
 
 ## Web Development: 
-
-### [Ktu Study Guide](https://github.com/shadil-rayyan/Ktustudyguide)
+-[Ktu Study Guide](https://github.com/shadil-rayyan/Ktustudyguide)
 
 ## Telegram Bots:
 - [Ktu Guide Bot](https://github.com/shadil-rayyan/KtuGuidebot)
@@ -20,11 +19,12 @@ Welcome to my journey of exploration in the captivating realm of software develo
 
 ## Machine Learning:
 - [Laptop Price Predictor](https://github.com/shadil-rayyan/My_Projects/tree/main/MachineLearning/LaptopPricePredicator%20-clone)
+- [face shape predicator](https://github.com/shadil-rayyan/face-shape-detector)
 
+## other github repository
+- [openSourceInternship](https://github.com/shadil-rayyan/opensourceinternship)
 # Getting Started:
 Each project has a dedicated folder with instructions and necessary files. Feel free to reach out if you encounter any issues or have questions.
-
-# Roadmap:
 Stay tuned for more exciting projects in the future! Contact me at shadilrayyan2@gmail.com.
 
 Feel free to connect with me.
