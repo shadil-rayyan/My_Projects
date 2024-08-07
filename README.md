@@ -2,9 +2,15 @@
 
 Welcome to my journey of exploration in the captivating realm of software development! This portfolio serves as a showcase for a variety of projects, ranging from web development to Telegram bots and Android applications. Here, you'll discover a collection of works that reflect my fervor for learning, problem-solving, and pushing the boundaries of technology.
 
+#my portfolio website 
+-[portfolio webiste 
 ## Web Development: 
 -[Ktu Study Guide](https://github.com/shadil-rayyan/Ktustudyguide)
 -realtimechat 
+-marsian weather dashboard 
+-inventory management 
+-cs stackup food bloggong website 
+
 
 
 ## Telegram Bots:
@@ -24,7 +30,8 @@ Welcome to my journey of exploration in the captivating realm of software develo
 - [face shape predicator](https://github.com/shadil-rayyan/face-shape-detector)
 
 ## other github repository
-- [openSourceInternship](https://github.com/shadil-rayyan/opensourceinternship)
+-ktucselab 
+-
 # Getting Started:
 Each project has a dedicated folder with instructions and necessary files. Feel free to reach out if you encounter any issues or have questions.
 Stay tuned for more exciting projects in the future! Contact me at shadilrayyan2@gmail.com.
