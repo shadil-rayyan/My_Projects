@@ -12,6 +12,7 @@ Welcome to my journey of exploration in the captivating realm of software develo
 - [cs stackup food bloggong website](https://github.com/shadil-rayyan/cs-108_StackUp)
 - ScholarshipMangementSystem
 - little eatery(coming soon)
+- (naminiElectric)[https://github.com/shadil-rayyan/namini-electric_website/tree/main]
 
 ## Telegram Bots:
 - [Ktu Guide Bot](https://github.com/shadil-rayyan/KtuGuidebot)
